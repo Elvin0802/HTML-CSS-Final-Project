@@ -1,0 +1,505 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* -------------------------------------------------------- */
+
+/* ------>  Mobile   <------ */
+
+@media (max-width: 399px) {
+    body {
+        width: 100%;
+        background-color: #0E0C15;
+        color: #FFFFFF;
+    }
+
+    .show-only-desktop {
+        display: none;
+    }
+
+    header .header-container {
+        background-color: #121825;
+        margin-top: 24px;
+        display: flex;
+        border-radius: 10px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    header .header-container .logo-img {
+        margin-top: 10px;
+        margin-left: 16px;
+        margin-bottom: 10px;
+    }
+
+    header .header-container .header-organization {
+        display: flex;
+        width: 200px;
+        height: 24px;
+        margin-left: 14px;
+        margin-top: 12.5px;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    header .header-container .header-organization p {
+        font-size: 14px;
+        margin-top: 3px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    main {
+        margin-top: 27px;
+        background-color: #121825;
+    }
+
+    main section .my-organization {
+        border-bottom: 1px solid #222B44;
+        display: flex;
+        width: 375px;
+    }
+
+    main section .my-organization p {
+        width: 152px;
+        height: 24px;
+        margin: 18px 0px 18px 16px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    main section .users {
+        display: flex;
+    }
+
+    main section .users p {
+        width: 124px;
+        height: 24px;
+        margin-top: 26px;
+        margin-left: 16px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    main section .search {
+        padding: 15px;
+        display: flex;
+        margin-top: 26px;
+        margin-left: 16px;
+        margin-right: 16px;
+        border: #313E62 1px solid;
+        border-radius: 10px;
+    }
+
+    main section .search p {
+        font-size: 14px;
+        margin-left: 10px;
+        line-height: 18px;
+        text-align: left;
+        width: 285px;
+        height: 18px;
+        color: #616D8D;
+    }
+
+    main section .users-container {
+        margin-top: 18px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    main section .users-container .users-head {
+        background-color: #0E0C15;
+        border-radius: 10px;
+        display: flex;
+    }
+
+    main section .users-container .users-head .head-p {
+        color: #9CA3AF;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        margin: 14px 82px;
+    }
+
+    main section .users-container .users-list {
+        overflow-y: scroll;
+        max-height: 640px;
+    }
+
+    main section .users-container .users-list li {
+        display: flex;
+        justify-content: space-around;
+        height: 64px;
+        margin: auto;
+        border-bottom: 1px solid #222B44;
+        align-items: center;
+    }
+
+    main section .users-container .users-list li div p {
+        display: flex;
+        margin: auto;
+        height: 16px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+
+    }
+
+    .page-nav {
+        display: flex;
+        gap: 5px;
+        margin: auto;
+        margin-top: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .page-nav .page-numbers {
+        margin: auto;
+        display: flex;
+    }
+
+    .page-nav .page-numbers ul {
+        display: flex;
+        gap: 4px;
+        margin: auto;
+    }
+
+    .page-arrow {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-end;
+        width: 32px;
+        height: 24px;
+    }
+
+    .page-arrow img {
+        margin: auto;
+        color: #FFFFFF;
+        background-color: #121825;
+    }
+
+    .page-nav .page-numbers ul li .page-number {
+        padding: 6px 14px;
+        border-radius: 8px;
+    }
+
+    .page-nav .page-numbers ul li:first-child .page-number {
+        color: #FFFFFF;
+        background-color: #1C64F2;
+    }
+
+    .last-div {
+        width: 100%;
+        margin-top: 150px;
+        background-color: #121825;
+    }
+
+}
+
+
+
+
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* ------>  Desktop   <------ */
+
+
+@media (min-width: 400px) {
+    body {
+        width: 100%;
+        background-color: #0E0C15;
+        color: #FFFFFF;
+    }
+
+    header .header-body {
+        display: flex;
+        justify-content: space-between;
+        background-color: #121825;
+        border-radius: 10px;
+        margin: 34px 25px 0px 25px;
+    }
+
+    header .header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    header .header-container .logo-img {
+        margin-left: 24px;
+    }
+
+    header .header-container .header-organization {
+        display: flex;
+        width: 200px;
+        height: 24px;
+        margin-left: 44px;
+        gap: 10px;
+    }
+
+    header .header-container .header-organization p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    header .profile-info {
+        display: flex;
+        margin: 16px 24px 16px 0px;
+        border: 1px solid #222B44;
+        border-radius: 6px;
+        padding: 8px 14px;
+        gap: 12px;
+    }
+
+    header .profile-info div .login-status-info {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: left;
+        color: #616D8D;
+    }
+
+    header .profile-info div .user-type {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+    }
+
+    main {
+        background-color: #121825;
+        margin: 34px 25px;
+        border-radius: 18px;
+    }
+
+    main section .my-organization {
+        border-bottom: 1px solid #222B44;
+        display: flex;
+        width: 100%;
+    }
+
+    main section .my-organization p {
+        width: 152px;
+        height: 24px;
+        margin: 24px 0px 24px 34px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    main section .users {
+        display: flex;
+    }
+
+    main section .users p {
+        width: 124px;
+        height: 24px;
+        margin: 29px 0px 0px 34px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    main section .search {
+        padding: 15px;
+        display: flex;
+        margin: 24px 34px 0px 34px;
+        border: #313E62 1px solid;
+        border-radius: 8px;
+    }
+
+    main section .search p {
+        font-size: 14px;
+        margin-left: 10px;
+        line-height: 18px;
+        text-align: left;
+        width: 285px;
+        height: 18px;
+        color: #616D8D;
+    }
+
+    main section .users-container {
+        margin: 24px 34px 0px 34px;
+    }
+
+    main section .users-container .user-info-width-b {
+        width: 250px;
+    }
+
+    main section .users-container .user-info-width-s {
+        width: 93px;
+    }
+
+    main section .users-container .users-head {
+        background-color: #0E0C15;
+        border-radius: 10px;
+        display: flex;
+    }
+
+    main section .users-container .users-head p {
+        color: #9CA3AF;
+    }
+
+    main section .users-container .users-list {
+
+        overflow-y: scroll;
+    }
+
+    main section .users-container .users-head .head-name {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        width: 24px;
+        height: 16px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+        margin-left: 34.5px;
+    }
+
+    main section .users-container .users-head .head-email {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        width: 31px;
+        height: 16px;
+        margin-left: 109.5px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+
+    main section .users-container .users-list {
+        max-height: 662px;
+    }
+
+    main section .users-container .users-list li {
+        border-bottom: 1px solid #222B44;
+        display: flex;
+    }
+
+    main section .users-container .email-text,
+    main section .users-container .actions-text,
+    main section .users-container .name-text,
+    main section .users-container .role-text,
+    main section .users-container .subscription-text,
+    main section .users-container .token-text {
+        width: 300.3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section .users-container .users-head .email-text,
+    main section .users-container .users-head .actions-text,
+    main section .users-container .users-head .name-text,
+    main section .users-container .users-head .role-text,
+    main section .users-container .users-head .subscription-text,
+    main section .users-container .users-head .token-text {
+        height: 46px;
+    }
+
+    main section .users-container .users-list .email-text,
+    main section .users-container .users-list .actions-text,
+    main section .users-container .users-list .name-text,
+    main section .users-container .users-list .role-text,
+    main section .users-container .users-list .subscription-text,
+    main section .users-container .users-list .token-text {
+        height: 64px;
+    }
+
+    main section .users-container .actions-text {
+        gap: 10px;
+    }
+
+    main section .users-container .users-head .token-text img {
+        margin-left: 10px;
+    }
+
+    main section .users-container .users-list li div p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        max-width: 280px;
+        overflow-wrap: break-word;
+    }
+
+    .page-nav {
+        display: flex;
+        gap: 5px;
+        margin: auto;
+        margin-top: 24px;
+        margin-bottom: 45px;
+    }
+
+    .page-nav .page-numbers {
+        margin: auto;
+        display: flex;
+    }
+
+    .page-nav .page-numbers ul {
+        display: flex;
+        gap: 4px;
+        margin: auto;
+
+    }
+
+    .page-arrow {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-end;
+        width: 32px;
+        height: 24px;
+    }
+
+    .page-arrow img {
+        margin: auto;
+        color: #FFFFFF;
+        background-color: #121825;
+    }
+
+    .page-nav .page-numbers ul li .page-number {
+        padding: 6px 14px;
+        border-radius: 8px;
+    }
+
+    .page-nav .page-numbers ul li:first-child .page-number {
+        color: #FFFFFF;
+        background-color: #1C64F2;
+    }
+
+    .last-div {
+        width: 100%;
+        color: #ffe600;
+    }
+}
